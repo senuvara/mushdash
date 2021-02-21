@@ -1,0 +1,15 @@
+using Assets.Scripts.GameCore.Managers;
+using Assets.Scripts.PeroTools.Commons;
+
+namespace Assets.Scripts.GameCore.Skill
+{
+	public class FanRobotSkill : ISkill
+	{
+		public string uid => "Elfin_4";
+
+		public void Apply()
+		{
+			Singleton<BattleProperty>.instance.reviveDeadline = 50;
+		}
+	}
+}
